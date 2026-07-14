@@ -139,15 +139,46 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
-    // --- メールアドレス表示機能 ---
+    // --- メールアドレス表示機能（モーダル） ---
     /**
-     * @summary Emailボタンクリック時にメールアドレスをアラートで表示する
+     * @summary Emailボタンクリック時にモーダルを表示し、コピー機能を有効にする
      */
     const emailBtn = document.getElementById('emailBtn');
-    if (emailBtn) {
+    const emailModal = document.getElementById('emailModal');
+    const closeModalBtn = document.getElementById('closeModalBtn');
+    const copyEmailBtn = document.getElementById('copyEmailBtn');
+    const emailText = 'Xiomi403116@gmail.com';
+
+    if (emailBtn && emailModal) {
+        // モーダルを開く
         emailBtn.addEventListener('click', (e) => {
             e.preventDefault();
-            alert('Email: Xiomi403116@gmail.com\n\nお仕事のご依頼やご相談はお気軽にどうぞ！');
+            emailModal.classList.add('active');
+        });
+
+        // 閉じるボタンでモーダルを閉じる
+        closeModalBtn.addEventListener('click', () => {
+            emailModal.classList.remove('active');
+        });
+
+        // モーダルの外側（背景）をクリックで閉じる
+        emailModal.addEventListener('click', (e) => {
+            if (e.target === emailModal) {
+                emailModal.classList.remove('active');
+            }
+        });
+
+        // クリップボードにコピー
+        copyEmailBtn.addEventListener('click', () => {
+            navigator.clipboard.writeText(emailText).then(() => {
+                const originalHTML = copyEmailBtn.innerHTML;
+                copyEmailBtn.innerHTML = '<i class="fa-solid fa-check"></i> Copied!';
+                setTimeout(() => {
+                    copyEmailBtn.innerHTML = originalHTML;
+                }, 2000);
+            }).catch(err => {
+                console.error('Failed to copy text: ', err);
+            });
         });
     }
 });
