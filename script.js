@@ -138,4 +138,16 @@ document.addEventListener('DOMContentLoaded', () => {
             behavior: 'smooth'
         });
     });
+
+    // --- メールアドレス表示機能 ---
+    /**
+     * @summary Emailボタンクリック時にメールアドレスをアラートで表示する
+     */
+    const emailBtn = document.getElementById('emailBtn');
+    if (emailBtn) {
+        emailBtn.addEventListener('click', (e) => {
+            e.preventDefault();
+            alert('Email: Xiomi403116@gmail.com\n\nお仕事のご依頼やご相談はお気軽にどうぞ！');
+        });
+    }
 });
