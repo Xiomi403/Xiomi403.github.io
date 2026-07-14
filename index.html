@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="ja" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title data-jp="Xiomiのポートフォリオ" data-en="Xiomi's Portfolio">Xiomiのポートフォリオ</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Google Fonts: Outfit for English, Noto Sans JP for Japanese -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&family=Noto+Sans+JP:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- サイト上部に戻るボタン -->
+    <button id="scrollTopBtn" title="Go to top" class="glass-btn">
+        <i class="fa-solid fa-arrow-up"></i>
+    </button>
+
+    <!-- Header / Navigation -->
+    <header class="glass-nav">
+        <div class="nav-container">
+            <a href="#hero" class="logo">Xiomi.</a>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="#about" data-jp="自己紹介" data-en="About">自己紹介</a></li>
+                    <li><a href="#skills" data-jp="スキル" data-en="Skills">スキル</a></li>
+                    <li><a href="#works" data-jp="作品" data-en="Works">作品</a></li>
+                    <li><a href="#events" data-jp="イベント" data-en="Events">イベント</a></li>
+                    <li><a href="#contact" data-jp="連絡先" data-en="Contact">連絡先</a></li>
+                </ul>
+            </nav>
+            <div class="controls">
+                <!-- JP/EN 切り替え -->
+                <button id="langToggle" class="glass-btn control-btn">
+                    <span class="lang-text">EN</span>
+                </button>
+                <!-- テーマ切り替え -->
+                <button id="themeToggle" class="glass-btn control-btn">
+                    <i class="fa-solid fa-sun" id="themeIcon"></i>
+                </button>
+            </div>
+            <!-- モバイル用ハンバーガーメニュー -->
+            <button class="menu-toggle" id="mobileMenuBtn">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+        </div>
+        <!-- モバイルナビゲーション -->
+        <div class="mobile-nav" id="mobileNav">
+            <ul>
+                <li><a href="#about" data-jp="自己紹介" data-en="About" class="mobile-link">自己紹介</a></li>
+                <li><a href="#skills" data-jp="スキル" data-en="Skills" class="mobile-link">スキル</a></li>
+                <li><a href="#works" data-jp="作品" data-en="Works" class="mobile-link">作品</a></li>
+                <li><a href="#events" data-jp="イベント" data-en="Events" class="mobile-link">イベント</a></li>
+                <li><a href="#contact" data-jp="連絡先" data-en="Contact" class="mobile-link">連絡先</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="hero" class="hero-section hidden-on-scroll">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1 class="hero-title"><span class="highlight">Xiomi</span></h1>
+                    <p class="hero-subtitle" data-jp="未来を創るエンジニア学生" data-en="Engineering Student Building the Future">未来を創るエンジニア学生</p>
+                    <div class="hero-details">
+                        <div class="detail-item">
+                            <i class="fa-solid fa-graduation-cap"></i>
+                            <span data-jp="〇〇大学 〇〇学部" data-en="〇〇 University, Faculty of 〇〇">〇〇大学 〇〇学部</span>
+                        </div>
+                        <div class="detail-item">
+                            <i class="fa-solid fa-calendar-check"></i>
+                            <span data-jp="202X年 卒業予定" data-en="Class of 202X">202X年 卒業予定</span>
+                        </div>
+                    </div>
+                    <div class="hero-actions">
+                        <a href="#works" class="primary-btn" data-jp="作品を見る" data-en="View Works">作品を見る</a>
+                        <a href="#contact" class="secondary-btn" data-jp="連絡する" data-en="Contact Me">連絡する</a>
+                    </div>
+                </div>
+                <div class="hero-image-container">
+                    <div class="blob-shape"></div>
+                    <img src="assets/profile_placeholder.png" alt="Xiomi" class="hero-image" id="profileImage">
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="section hidden-on-scroll">
+            <h2 class="section-title" data-jp="自己紹介" data-en="About Me">自己紹介</h2>
+            <div class="about-container glass-card">
+                <p class="about-text" data-jp="こんにちは、Xiomiです！Web開発や新しいテクノロジーに興味があり、日々技術を学んでいます。使いやすく、見た目も美しいアプリケーションを作ることを目標としています。" data-en="Hello, I'm Xiomi! I'm passionate about web development and exploring new technologies. My goal is to build user-friendly and aesthetically pleasing applications.">
+                    こんにちは、Xiomiです！Web開発や新しいテクノロジーに興味があり、日々技術を学んでいます。使いやすく、見た目も美しいアプリケーションを作ることを目標としています。
+                </p>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="section hidden-on-scroll">
+            <h2 class="section-title" data-jp="スキル" data-en="Skills">スキル</h2>
+            <div class="skills-grid">
+                <div class="skill-card glass-card">
+                    <i class="fa-brands fa-html5 skill-icon" style="color: #E34F26;"></i>
+                    <h3>HTML / CSS</h3>
+                    <p data-jp="セマンティックなマークアップとモダンなCSS設計。" data-en="Semantic markup and modern CSS design.">セマンティックなマークアップとモダンなCSS設計。</p>
+                </div>
+                <div class="skill-card glass-card">
+                    <i class="fa-brands fa-js skill-icon" style="color: #F7DF1E;"></i>
+                    <h3>JavaScript</h3>
+                    <p data-jp="動的なUIの構築やAPI連携。" data-en="Building dynamic UIs and API integration.">動的なUIの構築やAPI連携。</p>
+                </div>
+                <div class="skill-card glass-card">
+                    <i class="fa-brands fa-react skill-icon" style="color: #61DAFB;"></i>
+                    <h3>React / Frameworks</h3>
+                    <p data-jp="モダンなフロントエンド開発。" data-en="Modern frontend development.">モダンなフロントエンド開発。</p>
+                </div>
+                <!-- 追加のスキルがあればここへ -->
+            </div>
+        </section>
+
+        <!-- Works Section -->
+        <section id="works" class="section hidden-on-scroll">
+            <h2 class="section-title" data-jp="制作した作品" data-en="My Works">制作した作品</h2>
+            <div class="works-grid">
+                <!-- Work Item 1 -->
+                <div class="work-card glass-card">
+                    <div class="work-img-container">
+                        <img src="assets/work1_placeholder.png" alt="Work 1" class="work-img">
+                        <div class="work-overlay">
+                            <a href="#" class="work-link-btn" target="_blank">
+                                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="work-info">
+                        <h3 data-jp="プロジェクトタイトル 1" data-en="Project Title 1">プロジェクトタイトル 1</h3>
+                        <p data-jp="使用技術: HTML, CSS, JS" data-en="Tech Stack: HTML, CSS, JS">使用技術: HTML, CSS, JS</p>
+                    </div>
+                </div>
+                <!-- Work Item 2 -->
+                <div class="work-card glass-card">
+                    <div class="work-img-container">
+                        <img src="assets/work2_placeholder.png" alt="Work 2" class="work-img">
+                        <div class="work-overlay">
+                            <a href="#" class="work-link-btn" target="_blank">
+                                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="work-info">
+                        <h3 data-jp="プロジェクトタイトル 2" data-en="Project Title 2">プロジェクトタイトル 2</h3>
+                        <p data-jp="使用技術: React, Node.js" data-en="Tech Stack: React, Node.js">使用技術: React, Node.js</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Events Section -->
+        <section id="events" class="section hidden-on-scroll">
+            <h2 class="section-title" data-jp="参加したイベント" data-en="Events Participated">参加したイベント</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content glass-card">
+                        <span class="timeline-date">202X.XX</span>
+                        <h3 data-jp="〇〇ハッカソン 参加" data-en="Participated in 〇〇 Hackathon">〇〇ハッカソン 参加</h3>
+                        <p data-jp="チームで〇〇アプリを開発し、〇〇賞を受賞。" data-en="Developed a 〇〇 app in a team and won the 〇〇 Award.">チームで〇〇アプリを開発し、〇〇賞を受賞。</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content glass-card">
+                        <span class="timeline-date">202X.XX</span>
+                        <h3 data-jp="〇〇テックカンファレンス" data-en="〇〇 Tech Conference">〇〇テックカンファレンス</h3>
+                        <p data-jp="ボランティアスタッフとして参加し、〇〇について学びました。" data-en="Participated as a volunteer staff and learned about 〇〇.">ボランティアスタッフとして参加し、〇〇について学びました。</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="section hidden-on-scroll">
+            <h2 class="section-title" data-jp="連絡先" data-en="Contact">連絡先</h2>
+            <div class="contact-container glass-card">
+                <p class="contact-msg" data-jp="お仕事のご依頼やご相談はお気軽にどうぞ。" data-en="Feel free to reach out for work inquiries or consultations.">お仕事のご依頼やご相談はお気軽にどうぞ。</p>
+                <div class="social-links">
+                    <a href="#" class="social-icon" title="GitHub"><i class="fa-brands fa-github"></i></a>
+                    <a href="#" class="social-icon" title="X (Twitter)"><i class="fa-brands fa-x-twitter"></i></a>
+                    <a href="#" class="social-icon" title="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+                    <a href="mailto:example@example.com" class="social-icon" title="Email"><i class="fa-solid fa-envelope"></i></a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="glass-footer">
+        <p>&copy; 2026 Xiomi. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
