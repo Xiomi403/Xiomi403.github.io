@@ -32,9 +32,9 @@ document.addEventListener('DOMContentLoaded', () => {
         
         elements.forEach(el => {
             if (isEnglish) {
-                el.textContent = el.getAttribute('data-en');
+                el.innerHTML = el.getAttribute('data-en');
             } else {
-                el.textContent = el.getAttribute('data-jp');
+                el.innerHTML = el.getAttribute('data-jp');
             }
         });
 
