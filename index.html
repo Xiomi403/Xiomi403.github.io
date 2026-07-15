@@ -74,6 +74,12 @@
                         京都コンピュータ学院でゲーム開発を学んでいます。<br>ゲームプログラマを志望し、チームでのゲーム制作に積極的に取り組んでいます。
                     </p>
 
+                    <div class="hero-affiliations" style="margin-bottom: 1.5rem; display: flex; flex-wrap: wrap; gap: 0.5rem; justify-content: center;">
+                        <span class="badge badge-secondary" data-jp='<i class="fa-solid fa-building-columns"></i> KCG D学系 4年制' data-en='<i class="fa-solid fa-building-columns"></i> KCG D Dept 4-year'><i class="fa-solid fa-building-columns"></i> KCG D学系 4年制</span>
+                        <span class="badge badge-secondary" data-jp='<i class="fa-solid fa-users"></i> 所属サークル ドリー' data-en='<i class="fa-solid fa-users"></i> Circle Dolly'><i class="fa-solid fa-users"></i> 所属サークル ドリー</span>
+                        <span class="badge badge-secondary" data-jp='<i class="fa-solid fa-gamepad"></i> 京都学生eスポーツ協会' data-en='<i class="fa-solid fa-gamepad"></i> Kyoto Student eSports Assoc.'><i class="fa-solid fa-gamepad"></i> 京都学生eスポーツ協会</span>
+                    </div>
+
                     <div class="hero-skills">
                         <a href="#skills" class="top-skill glass-btn">
                             <i class="fa-brands fa-unity" style="color: var(--text-color);"></i> <span
@@ -241,6 +247,9 @@
         <!-- Experience Section -->
         <section id="experience" class="section hidden-on-scroll">
             <h2 class="section-title" data-jp="経歴・自己PR" data-en="About & Experience">経歴・自己PR</h2>
+            <div style="text-align: center; margin-bottom: 2.5rem; margin-top: -1rem;">
+                <button id="openHistoryModalBtn" class="secondary-btn" data-jp="詳細な履歴を見る" data-en="View Detailed History"><i class="fa-solid fa-list"></i> 詳細な履歴を見る</button>
+            </div>
             <div class="experience-container">
                 <div class="timeline">
                     <!-- Education -->
@@ -330,9 +339,9 @@
                             <span class="timeline-date" data-jp="2025/05 ~ 現在" data-en="2025/05 ~ Present">2025/05 ~
                                 現在</span>
                             <h3 data-jp="その他のゲームジャム・イベント活動" data-en="Other Game Jams & Events">その他のゲームジャム・イベント活動</h3>
-                            <p data-jp="Open Game Fest等のボランティアや、Minute Game、サークル合同ゲームジャム、KCG x RIT合同など、多数の開発・運営活動に継続的に取り組む。"
-                                data-en="Continuously involved in various volunteer works and game jams like Open Game Fest, Minute Game, etc.">
-                                Open Game Fest等のボランティアや、Minute Game、サークル合同ゲームジャム、KCG x RIT合同など、多数の開発・運営活動に継続的に取り組む。
+                            <p data-jp="Open Game Fest等のボランティアや、Minute Game、サークル合同ゲームジャム、KCG x RIT合同、オープンキャンパス向けゲーム制作など、多数の開発・運営活動に継続的に取り組む。"
+                                data-en="Continuously involved in various volunteer works and game projects like Open Game Fest, Minute Game, Open Campus projects, etc.">
+                                Open Game Fest等のボランティアや、Minute Game、サークル合同ゲームジャム、KCG x RIT合同、オープンキャンパス向けゲーム制作など、多数の開発・運営活動に継続的に取り組む。
                             </p>
                             <div class="timeline-tags">
                                 <span class="badge badge-secondary"
@@ -408,6 +417,49 @@
     <footer class="glass-footer">
         <p>&copy; 2026 塩見信太郎 All rights reserved.</p>
     </footer>
+
+    <!-- History Modal -->
+    <div id="historyModal" class="modal-overlay">
+        <div class="modal-content glass-card history-modal">
+            <button id="closeHistoryModalBtn" class="close-btn"><i class="fa-solid fa-xmark"></i></button>
+            <h3 data-jp="詳細な活動履歴" data-en="Detailed History">詳細な活動履歴</h3>
+            
+            <div class="history-tabs">
+                <button class="history-tab-btn active" data-target="tab-volunteer" data-jp="ボランティア参加" data-en="Volunteers">ボランティア参加</button>
+                <button class="history-tab-btn" data-target="tab-team" data-jp="チーム制作" data-en="Team Projects">チーム制作</button>
+            </div>
+
+            <div class="history-tab-content active" id="tab-volunteer">
+                <ul class="history-list">
+                    <li><span class="history-date">2025/05</span> Open Game Fest 2025</li>
+                    <li><span class="history-date">2025/07</span> BitSummit the 13th Summer of Yokai</li>
+                    <li><span class="history-date">2025/09~10</span> <span data-jp="大阪万博 関西パビリオン 京都ブース" data-en="Osaka Expo Kansai Pavilion Kyoto Booth">大阪万博 関西パビリオン 京都ブース</span></li>
+                    <li><span class="history-date">2025/11</span> <span data-jp="企業説明会" data-en="Company Info Session">企業説明会</span></li>
+                    <li><span class="history-date">2025/11</span> <span data-jp="ええかんじのゲームガッカイ（EGG）" data-en="EGG Game Conference">ええかんじのゲームガッカイ（EGG）</span></li>
+                    <li><span class="history-date">2026/02</span> <span data-jp="京都ジョブ博2026" data-en="Kyoto Job Fair 2026">京都ジョブ博2026</span></li>
+                    <li><span class="history-date">2026/03</span> <span data-jp="ゲームパビリオンjp" data-en="Game Pavilion jp">ゲームパビリオンjp</span></li>
+                    <li><span class="history-date">2026/05</span> BitSummit PUNCH</li>
+                    <li><span class="history-date">2026/06</span> <span data-jp="夏の京都ジョブ博2026" data-en="Summer Kyoto Job Fair 2026">夏の京都ジョブ博2026</span></li>
+                    <li><span class="history-date">2026/07</span> Open Game Fest 2026</li>
+                </ul>
+            </div>
+
+            <div class="history-tab-content" id="tab-team">
+                <ul class="history-list">
+                    <li><span class="history-date">2025/08</span> Minute Game</li>
+                    <li><span class="history-date">2025/09</span> <span data-jp="サークル合同ゲームジャム" data-en="Joint Circle Game Jam">サークル合同ゲームジャム</span></li>
+                    <li><span class="history-date">2025/11</span> <span data-jp="KCG 11月祭展示ゲーム制作" data-en="KCG November Festival Exhibit Game">KCG 11月祭展示ゲーム制作</span></li>
+                    <li><span class="history-date">2025/12~26/01</span> GGX NEXUS JAM</li>
+                    <li><span class="history-date">2026/02</span> Bit Summit Game Jam</li>
+                    <li><span class="history-date">2026/03</span> <span data-jp="KCGオープンキャンパス向けゲーム制作" data-en="Game production for KCG Open Campus">KCGオープンキャンパス向けゲーム制作</span></li>
+                    <li><span class="history-date">2026/04</span> <span data-jp="KCG x RIT合同ゲームジャム１回目" data-en="1st KCG x RIT Joint Game Jam">KCG x RIT合同ゲームジャム１回目</span></li>
+                    <li><span class="history-date">2026/05</span> <span data-jp="ドリー1週間ゲームジャム" data-en="Dolly 1-Week Game Jam">ドリー1週間ゲームジャム</span></li>
+                    <li><span class="history-date">2026/05</span> <span data-jp="KCG x RIT合同ゲームジャム2回目" data-en="2nd KCG x RIT Joint Game Jam">KCG x RIT合同ゲームジャム2回目</span></li>
+                    <li><span class="history-date">2026/06</span> <span data-jp="サークル合同1週間ゲームジャム" data-en="Joint Circle 1-Week Game Jam">サークル合同1週間ゲームジャム</span></li>
+                </ul>
+            </div>
+        </div>
+    </div>
 
     <!-- Email Modal -->
     <div id="emailModal" class="modal-overlay">

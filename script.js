@@ -156,4 +156,40 @@ document.addEventListener('DOMContentLoaded', () => {
             });
         });
     }
+
+    // --- History Modal & Tabs ---
+    const openHistoryBtn = document.getElementById('openHistoryModalBtn');
+    const historyModal = document.getElementById('historyModal');
+    const closeHistoryBtn = document.getElementById('closeHistoryModalBtn');
+    const tabBtns = document.querySelectorAll('.history-tab-btn');
+    const tabContents = document.querySelectorAll('.history-tab-content');
+
+    if (openHistoryBtn && historyModal) {
+        openHistoryBtn.addEventListener('click', (e) => {
+            e.preventDefault();
+            historyModal.classList.add('active');
+        });
+
+        closeHistoryBtn.addEventListener('click', () => {
+            historyModal.classList.remove('active');
+        });
+
+        historyModal.addEventListener('click', (e) => {
+            if (e.target === historyModal) {
+                historyModal.classList.remove('active');
+            }
+        });
+
+        // Tab switching
+        tabBtns.forEach(btn => {
+            btn.addEventListener('click', () => {
+                tabBtns.forEach(b => b.classList.remove('active'));
+                tabContents.forEach(c => c.classList.remove('active'));
+                
+                btn.classList.add('active');
+                const targetId = btn.getAttribute('data-target');
+                document.getElementById(targetId).classList.add('active');
+            });
+        });
+    }
 });
