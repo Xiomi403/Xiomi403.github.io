@@ -77,12 +77,12 @@ ul {
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.glass-card:hover {
+a.glass-card:hover {
     transform: translateY(-5px);
     box-shadow: 0 12px 40px 0 rgba(0, 0, 0, 0.4);
 }
 
-:root[data-theme="light"] .glass-card:hover {
+:root[data-theme="light"] a.glass-card:hover {
     box-shadow: 0 12px 40px 0 rgba(31, 38, 135, 0.15);
 }
 
