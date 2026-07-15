@@ -494,6 +494,60 @@ main {
     font-size: 0.9rem;
 }
 
+/* Activities & Experience */
+.activities-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+}
+
+.activity-column {
+    padding: 2.5rem 2rem;
+}
+
+.activity-column h3 {
+    margin-bottom: 1.5rem;
+    color: var(--accent-color);
+    border-bottom: 2px solid var(--glass-border);
+    padding-bottom: 0.8rem;
+    font-size: 1.3rem;
+}
+
+.activity-list {
+    list-style: none;
+    padding: 0;
+}
+
+.activity-list li {
+    margin-bottom: 1.2rem;
+    padding-left: 1.5rem;
+    position: relative;
+}
+
+.activity-list li::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 8px;
+    width: 8px;
+    height: 8px;
+    background-color: var(--accent-color);
+    border-radius: 50%;
+}
+
+.activity-date {
+    display: block;
+    color: var(--text-muted);
+    font-size: 0.9rem;
+    margin-bottom: 0.2rem;
+    font-family: monospace;
+}
+
+.activity-title {
+    font-weight: 600;
+    font-size: 1.05rem;
+}
+
 /* Events Timeline */
 .timeline {
     position: relative;
@@ -741,5 +795,9 @@ main {
     
     .section {
         padding: 4rem 0;
+    }
+
+    .activities-grid {
+        grid-template-columns: 1fr;
     }
 }
