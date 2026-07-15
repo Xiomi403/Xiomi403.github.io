@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title data-jp="about me, Xiomi" data-en="about me, Xiomi">about me, Xiomi</title>
+    <title data-jp="自己紹介, 塩見信太郎" data-en="about me, Shintaro Shiomi">about me, Shintaro Shiomi</title>
     <link rel="stylesheet" href="style.css">
     <!-- Google Fonts: Outfit for English, Noto Sans JP for Japanese -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -14,7 +14,7 @@
         rel="stylesheet">
     <!-- FontAwesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-    <!-- Devicon (プログラミング言語用アイコン) -->
+    <!-- Devicon -->
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
 </head>
 
@@ -30,10 +30,9 @@
             <a href="#hero" class="logo">Xiomi</a>
             <nav>
                 <ul class="nav-links">
-                    <li><a href="#about" data-jp="自己紹介" data-en="About">自己紹介</a></li>
-                    <li><a href="#skills" data-jp="スキル" data-en="Skills">スキル</a></li>
                     <li><a href="#works" data-jp="作品" data-en="Works">作品</a></li>
-                    <li><a href="#events" data-jp="イベント" data-en="Events">イベント</a></li>
+                    <li><a href="#skills" data-jp="スキル" data-en="Skills">スキル</a></li>
+                    <li><a href="#experience" data-jp="経歴" data-en="Experience">経歴</a></li>
                     <li><a href="#contact" data-jp="連絡先" data-en="Contact">連絡先</a></li>
                 </ul>
             </nav>
@@ -51,10 +50,9 @@
         <!-- モバイルナビゲーション -->
         <div class="mobile-nav" id="mobileNav">
             <ul>
-                <li><a href="#about" data-jp="自己紹介" data-en="About" class="mobile-link">自己紹介</a></li>
-                <li><a href="#skills" data-jp="スキル" data-en="Skills" class="mobile-link">スキル</a></li>
                 <li><a href="#works" data-jp="作品" data-en="Works" class="mobile-link">作品</a></li>
-                <li><a href="#events" data-jp="イベント" data-en="Events" class="mobile-link">イベント</a></li>
+                <li><a href="#skills" data-jp="スキル" data-en="Skills" class="mobile-link">スキル</a></li>
+                <li><a href="#experience" data-jp="経歴" data-en="Experience" class="mobile-link">経歴</a></li>
                 <li><a href="#contact" data-jp="連絡先" data-en="Contact" class="mobile-link">連絡先</a></li>
             </ul>
         </div>
@@ -65,23 +63,37 @@
         <section id="hero" class="hero-section hidden-on-scroll">
             <div class="hero-content">
                 <div class="hero-text">
-                    <h1 class="hero-title"><span class="highlight">Xiomi</span></h1>
-                    <p class="hero-subtitle" data-jp="ゲームプログラマを目指す学生です"
-                        data-en="A student aspiring to be a game programmer">
-                        ゲームプログラマを目指す学生です</p>
-                    <div class="hero-details">
-                        <div class="detail-item">
-                            <i class="fa-solid fa-graduation-cap"></i>
-                            <span data-jp="京都コンピュータ学院<br>　デジタルゲーム学系・ゲーム学科"
-                                data-en="Kyoto Computer Gakuin<br>Dept. of Digital Games">京都コンピュータ学院<br>　デジタルゲーム学系・ゲーム学科</span>
-                        </div>
-                        <div class="detail-item">
-                            <i class="fa-solid fa-calendar-check"></i>
-                            <span data-jp="2029年 卒業予定" data-en="Class of 2029">2029年 卒業予定</span>
-                        </div>
+                    <p class="hero-catchphrase highlight" data-jp="ゲームプログラマを目指す塩見信太郎のポートフォリオ"
+                        data-en="Portfolio of Shintaro Shiomi, aspiring Game Programmer">
+                        ゲームプログラマを目指す塩見信太郎のポートフォリオ
+                    </p>
+                    <h1 class="hero-title">塩見信太郎</h1>
+                    <p class="hero-description"
+                        data-jp="京都コンピュータ学院でゲーム開発を学んでいます。<br>ゲームプログラマを志望し、チームでのゲーム制作に積極的に取り組んでいます。"
+                        data-en="Studying game development at Kyoto Computer Gakuin.<br>Aspiring game programmer actively participating in team game projects.">
+                        京都コンピュータ学院でゲーム開発を学んでいます。<br>ゲームプログラマを志望し、チームでのゲーム制作に積極的に取り組んでいます。
+                    </p>
+
+                    <div class="hero-skills">
+                        <a href="#skills" class="top-skill glass-btn">
+                            <i class="fa-brands fa-unity" style="color: var(--text-color);"></i> <span
+                                class="skill-name">Unity</span>
+                        </a>
+                        <a href="#skills" class="top-skill glass-btn">
+                            <i class="devicon-cplusplus-plain" style="color: #00599C;"></i> <span
+                                class="skill-name">C++</span>
+                        </a>
+                        <a href="#skills" class="top-skill glass-btn">
+                            <i class="devicon-csharp-plain" style="color: #68217A;"></i> <span
+                                class="skill-name">C#</span>
+                        </a>
+                        <a href="#skills" class="top-skill glass-btn">
+                            <i class="devicon-c-plain" style="color: #00599C;"></i> <span class="skill-name">C (学習中)</span>
+                        </a>
                     </div>
+
                     <div class="hero-actions">
-                        <a href="#works" class="primary-btn" data-jp="作品" data-en="View Works">作品</a>
+                        <a href="#works" class="primary-btn" data-jp="作品を見る" data-en="View Works">作品を見る</a>
                         <a href="#contact" class="secondary-btn" data-jp="ご連絡" data-en="Contact Me">ご連絡</a>
                     </div>
                 </div>
@@ -91,62 +103,13 @@
             </div>
         </section>
 
-        <!-- About Section -->
-        <section id="about" class="section hidden-on-scroll">
-            <h2 class="section-title" data-jp="自己紹介" data-en="About Me">自己紹介</h2>
-            <div class="about-container glass-card">
-                <p class="about-text" data-jp="京都コンピュータ学院でゲーム開発を学んでいる塩見です。<br>ゲームプログラマを志望しています。"
-                    data-en="I'm Shiomi, studying game development at Kyoto Computer Gakuin.<br>I aspire to become a game programmer.">
-                    京都コンピュータ学院でゲーム開発を学んでいる塩見です。<br>ゲームプログラマを志望しています。
-                </p>
-                <div class="about-details" style="margin-top: 2rem; text-align: left; display: inline-block;">
-                    <ul style="list-style-type: none; padding: 0;">
-                        <li style="margin-bottom: 0.8rem;"><i class="fa-solid fa-building-columns"
-                                style="color: var(--accent-color); width: 24px;"></i> <span data-jp="所属: KCG D学系 4年制"
-                                data-en="Affiliation: KCG Dept. of Digital Games (4-year)">所属: KCG D学系 4年制</span></li>
-                        <li style="margin-bottom: 0.8rem;"><i class="fa-solid fa-users"
-                                style="color: var(--accent-color); width: 24px;"></i> <span data-jp="所属サークル: ドリー"
-                                data-en="Circle: Dolly">所属サークル: ドリー</span></li>
-                        <li style="margin-bottom: 0.8rem;"><i class="fa-solid fa-gamepad"
-                                style="color: var(--accent-color); width: 24px;"></i> <span data-jp="外部組織: 京都学生eスポーツ協会"
-                                data-en="Organization: Kyoto Student eSports Association">外部組織: 京都学生eスポーツ協会</span></li>
-                    </ul>
-                </div>
-            </div>
-        </section>
-
-        <!-- Skills Section -->
-        <section id="skills" class="section hidden-on-scroll">
-            <h2 class="section-title" data-jp="スキル" data-en="Skills">スキル</h2>
-            <div class="skills-grid">
-                <div class="skill-card glass-card">
-                    <i class="fa-brands fa-unity skill-icon" style="color: var(--text-color);"></i>
-                    <h3>Unity</h3>
-                    <p data-jp="Unityでの2D/3Dゲーム開発" data-en="2D/3D game development using Unity">
-                        Unityでの2D/3Dゲーム開発</p>
-                </div>
-                <div class="skill-card glass-card">
-                    <i class="devicon-cplusplus-plain skill-icon" style="color: #00599C;"></i>
-                    <h3>C++</h3>
-                    <p data-jp="C++でのプログラミング/ゲーム開発" data-en="Programming and game development in C++">
-                        C++でのプログラミング/ゲーム開発
-                    </p>
-                </div>
-                <!-- <div class="skill-card glass-card">
-                    <i class="fa-brands fa-react skill-icon" style="color: #61DAFB;"></i>
-                    <h3>React / Frameworks</h3>
-                    <p data-jp="モダンなフロントエンド開発。" data-en="Modern frontend development."></p>
-                </div> -->
-                <!-- 追加のスキルがあればここへ -->
-            </div>
-        </section>
-
         <!-- Works Section -->
         <section id="works" class="section hidden-on-scroll">
-            <h2 class="section-title" data-jp="制作した作品" data-en="My Works">制作した作品</h2>
+            <h2 class="section-title" data-jp="作品一覧" data-en="Projects / Works">作品一覧</h2>
             <div class="works-grid">
                 <!-- Work Item 1 -->
-                <a href="https://linktr.ee/pistachiogekohan" class="work-card glass-card" target="_blank" rel="noopener noreferrer">
+                <a href="https://linktr.ee/pistachiogekohan" class="work-card glass-card" target="_blank"
+                    rel="noopener noreferrer">
                     <div class="work-img-container">
                         <img src="https://linktr.ee/og/image/pistachiogekohan.jpg" alt="White No Way" class="work-img">
                         <div class="work-overlay">
@@ -157,13 +120,19 @@
                     </div>
                     <div class="work-info">
                         <h3 data-jp="ホワイトノウェイ" data-en="White No Way">ホワイトノウェイ</h3>
+                        <div class="tech-tags">
+                            <span class="tech-tag glass-btn"><i class="fa-brands fa-unity"></i> Unity</span>
+                            <span class="tech-tag glass-btn"><i class="devicon-csharp-plain"></i> C#</span>
+                        </div>
                         <p data-jp="詳細リンクはこちら" data-en="Click to view details">詳細リンクはこちら</p>
                     </div>
                 </a>
                 <!-- Work Item 2 -->
-                <a href="https://bitsummit-gamejam.itch.io/nigetoy" class="work-card glass-card" target="_blank" rel="noopener noreferrer">
+                <a href="https://bitsummit-gamejam.itch.io/nigetoy" class="work-card glass-card" target="_blank"
+                    rel="noopener noreferrer">
                     <div class="work-img-container">
-                        <img src="https://img.itch.zone/aW1nLzI3MjkxNzY4LmpwZw==/original/sX6ozt.jpg" alt="Nige Toy" class="work-img">
+                        <img src="https://img.itch.zone/aW1nLzI3MjkxNzY4LmpwZw==/original/sX6ozt.jpg" alt="Nige Toy"
+                            class="work-img">
                         <div class="work-overlay">
                             <span class="work-link-btn">
                                 <i class="fa-solid fa-arrow-up-right-from-square"></i>
@@ -172,13 +141,19 @@
                     </div>
                     <div class="work-info">
                         <h3 data-jp="にげトイ" data-en="Nige Toy">にげトイ</h3>
+                        <div class="tech-tags">
+                            <span class="tech-tag glass-btn"><i class="fa-brands fa-unity"></i> Unity</span>
+                            <span class="tech-tag glass-btn"><i class="devicon-csharp-plain"></i> C#</span>
+                        </div>
                         <p data-jp="詳細リンクはこちら" data-en="Click to view details">詳細リンクはこちら</p>
                     </div>
                 </a>
                 <!-- Work Item 3 -->
-                <a href="https://unityroom.com/games/kuneyoke" class="work-card glass-card" target="_blank" rel="noopener noreferrer">
+                <a href="https://unityroom.com/games/kuneyoke" class="work-card glass-card" target="_blank"
+                    rel="noopener noreferrer">
                     <div class="work-img-container">
-                        <img src="https://os-worker.unityroom.com/unityroom_production/icon/299188/icon_20260519_220003.png?h=1779195603" alt="Kuneyoke" class="work-img">
+                        <img src="https://os-worker.unityroom.com/unityroom_production/icon/299188/icon_20260519_220003.png?h=1779195603"
+                            alt="Kuneyoke" class="work-img">
                         <div class="work-overlay">
                             <span class="work-link-btn">
                                 <i class="fa-solid fa-arrow-up-right-from-square"></i>
@@ -187,13 +162,19 @@
                     </div>
                     <div class="work-info">
                         <h3 data-jp="くねよけ" data-en="Kuneyoke">くねよけ</h3>
+                        <div class="tech-tags">
+                            <span class="tech-tag glass-btn"><i class="fa-brands fa-unity"></i> Unity</span>
+                            <span class="tech-tag glass-btn"><i class="devicon-csharp-plain"></i> C#</span>
+                        </div>
                         <p data-jp="詳細リンクはこちら" data-en="Click to view details">詳細リンクはこちら</p>
                     </div>
                 </a>
                 <!-- Work Item 4 -->
-                <a href="https://unityroom.com/games/bangbangball" class="work-card glass-card" target="_blank" rel="noopener noreferrer">
+                <a href="https://unityroom.com/games/bangbangball" class="work-card glass-card" target="_blank"
+                    rel="noopener noreferrer">
                     <div class="work-img-container">
-                        <img src="https://os-worker.unityroom.com/unityroom_production/icon/302906/icon_20260601_211716.png?h=1780316236" alt="Bang!Bang!Ball!" class="work-img">
+                        <img src="https://os-worker.unityroom.com/unityroom_production/icon/302906/icon_20260601_211716.png?h=1780316236"
+                            alt="Bang!Bang!Ball!" class="work-img">
                         <div class="work-overlay">
                             <span class="work-link-btn">
                                 <i class="fa-solid fa-arrow-up-right-from-square"></i>
@@ -202,88 +183,189 @@
                     </div>
                     <div class="work-info">
                         <h3 data-jp="Bang!Bang!Ball!" data-en="Bang!Bang!Ball!">Bang!Bang!Ball!</h3>
+                        <div class="tech-tags">
+                            <span class="tech-tag glass-btn"><i class="fa-brands fa-unity"></i> Unity</span>
+                            <span class="tech-tag glass-btn"><i class="devicon-csharp-plain"></i> C#</span>
+                        </div>
                         <p data-jp="詳細リンクはこちら" data-en="Click to view details">詳細リンクはこちら</p>
                     </div>
                 </a>
             </div>
         </section>
 
-        <!-- Activities Section -->
-        <section id="events" class="section hidden-on-scroll">
-            <h2 class="section-title" data-jp="活動実績" data-en="Activities & Experience">活動実績</h2>
-            <div class="activities-grid">
-
-                <!-- 参加ボランティア -->
-                <div class="activity-column glass-card">
-                    <h3 data-jp="参加ボランティア" data-en="Volunteer Work">参加ボランティア</h3>
-                    <ul class="activity-list">
-                        <li><span class="activity-date">2025/05</span><span class="activity-title"
-                                data-jp="Open Game Fest 2025" data-en="Open Game Fest 2025">Open Game Fest 2025</span>
-                        </li>
-                        <li><span class="activity-date">2025/07</span><span class="activity-title"
-                                data-jp="BitSummit the 13th Summer of Yokai"
-                                data-en="BitSummit the 13th Summer of Yokai">BitSummit the 13th Summer of Yokai</span>
-                        </li>
-                        <li><span class="activity-date">2025/09~10</span><span class="activity-title"
-                                data-jp="大阪万博 関西パビリオン 京都ブース" data-en="Osaka Expo Kansai Pavilion Kyoto Booth">大阪万博
-                                関西パビリオン 京都ブース</span></li>
-                        <li><span class="activity-date">2025/11</span><span class="activity-title" data-jp="企業説明会"
-                                data-en="Company Information Session">企業説明会</span></li>
-                        <li><span class="activity-date">2025/11</span><span class="activity-title"
-                                data-jp="ええかんじのゲームガッカイ（EGG）"
-                                data-en="EEKANJI NO GAME GAKKAI (EGG)">ええかんじのゲームガッカイ（EGG）</span></li>
-                        <li><span class="activity-date">2026/02</span><span class="activity-title" data-jp="京都ジョブ博2026"
-                                data-en="Kyoto Job Fair 2026">京都ジョブ博2026</span></li>
-                        <li><span class="activity-date">2026/03</span><span class="activity-title" data-jp="ゲームパビリオンjp"
-                                data-en="Game Pavilion jp">ゲームパビリオンjp</span></li>
-                        <li><span class="activity-date">2026/05</span><span class="activity-title"
-                                data-jp="BitSummit PUNCH" data-en="BitSummit PUNCH">BitSummit PUNCH</span></li>
-                        <li><span class="activity-date">2026/06</span><span class="activity-title"
-                                data-jp="夏の京都ジョブ博2026" data-en="Summer Kyoto Job Fair 2026">夏の京都ジョブ博2026</span></li>
-                        <li><span class="activity-date">2026/07</span><span class="activity-title"
-                                data-jp="Open Game Fest 2026" data-en="Open Game Fest 2026">Open Game Fest 2026</span>
-                        </li>
-                    </ul>
+        <!-- Skills Section -->
+        <section id="skills" class="section hidden-on-scroll">
+            <h2 class="section-title" data-jp="スキルセット" data-en="Skills">スキルセット</h2>
+            <div class="skills-grid">
+                <div class="skill-card glass-card">
+                    <i class="fa-brands fa-unity skill-icon" style="color: var(--text-color);"></i>
+                    <h3>Unity</h3>
+                    <p class="skill-level highlight" data-jp="チーム制作で利用" data-en="Used in Team Projects">チーム制作で利用</p>
+                    <p class="skill-desc" data-jp="2D/3Dゲーム開発のメインツール。各種ゲームジャムで経験あり。"
+                        data-en="Main tool for 2D/3D game dev. Experienced in various game jams.">
+                        2D/3Dゲーム開発のメインツール。<br>各種ゲームジャムで経験あり。
+                    </p>
                 </div>
+                <div class="skill-card glass-card">
+                    <i class="devicon-cplusplus-plain skill-icon" style="color: #00599C;"></i>
+                    <h3>C++</h3>
+                    <p class="skill-level highlight" data-jp="個人開発・学習で利用" data-en="Personal & Learning">個人開発・学習で利用</p>
+                    <p class="skill-desc" data-jp="DirectX等を用いた低レイヤーからのプログラミング・ゲーム開発学習中。"
+                        data-en="Learning programming and game dev from low level using DirectX, etc.">
+                        DirectX等を用いた低レイヤーからのプログラミング・ゲーム開発学習中。
+                    </p>
+                </div>
+                <div class="skill-card glass-card">
+                    <i class="devicon-csharp-plain skill-icon" style="color: #68217A;"></i>
+                    <h3>C#</h3>
+                    <p class="skill-level highlight" data-jp="チーム制作で利用" data-en="Used in Team Projects">チーム制作で利用</p>
+                    <p class="skill-desc" data-jp="Unityでのスクリプト実装に使用。ゲームロジックの構築。"
+                        data-en="Used for script implementation in Unity. Building game logic.">
+                        Unityでのスクリプト実装に使用。<br>ゲームロジックの構築。
+                    </p>
+                </div>
+                <div class="skill-card glass-card">
+                    <i class="devicon-c-plain skill-icon" style="color: #00599C;"></i>
+                    <h3>C</h3>
+                    <p class="skill-level highlight" data-jp="学習中" data-en="Learning">学習中</p>
+                    <p class="skill-desc" data-jp="プログラミングの基礎知識として学習中。"
+                        data-en="Learning as foundational programming knowledge.">
+                        プログラミングの基礎知識として学習中。
+                    </p>
+                </div>
+            </div>
+        </section>
 
-                <!-- チーム制作 -->
-                <div class="activity-column glass-card">
-                    <h3 data-jp="チーム制作" data-en="Team Projects">チーム制作</h3>
-                    <ul class="activity-list">
-                        <li><span class="activity-date">2025/08</span><span class="activity-title" data-jp="Minute Game"
-                                data-en="Minute Game">Minute Game</span></li>
-                        <li><span class="activity-date">2025/09</span><span class="activity-title"
-                                data-jp="サークル合同ゲームジャム" data-en="Joint Circle Game Jam">サークル合同ゲームジャム</span></li>
-                        <li><span class="activity-date">2025/11</span><span class="activity-title"
-                                data-jp="KCG 11月祭展示ゲーム制作" data-en="KCG November Festival Game Project">KCG
-                                11月祭展示ゲーム制作</span></li>
-                        <li><span class="activity-date">2025/12~2026/01</span><span class="activity-title"
-                                data-jp="GGX NEXUS JAM" data-en="GGX NEXUS JAM">GGX NEXUS JAM</span></li>
-                        <li><span class="activity-date">2026/02</span><span class="activity-title"
-                                data-jp="Bit Summit Game Jam" data-en="Bit Summit Game Jam">Bit Summit Game Jam</span>
-                        </li>
-                        <li><span class="activity-date">2026/04</span><span class="activity-title"
-                                data-jp="KCG x RIT合同ゲームジャム1回目" data-en="KCG x RIT Joint Game Jam 1st">KCG x
-                                RIT合同ゲームジャム1回目</span></li>
-                        <li><span class="activity-date">2026/05</span><span class="activity-title"
-                                data-jp="ドリー1週間ゲームジャム" data-en="Dolly 1-Week Game Jam">ドリー1週間ゲームジャム</span></li>
-                        <li><span class="activity-date">2026/05</span><span class="activity-title"
-                                data-jp="KCG x RIT合同ゲームジャム2回目" data-en="KCG x RIT Joint Game Jam 2nd">KCG x
-                                RIT合同ゲームジャム2回目</span></li>
-                        <li><span class="activity-date">2026/06</span><span class="activity-title"
-                                data-jp="サークル合同1週間ゲームジャム" data-en="Joint Circle 1-Week Game Jam">サークル合同1週間ゲームジャム</span>
-                        </li>
-                    </ul>
+        <!-- Experience Section -->
+        <section id="experience" class="section hidden-on-scroll">
+            <h2 class="section-title" data-jp="経歴・自己PR" data-en="About & Experience">経歴・自己PR</h2>
+            <div class="experience-container">
+                <div class="timeline">
+                    <!-- Education -->
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content glass-card">
+                            <span class="timeline-date">2025/04</span>
+                            <h3 data-jp="京都コンピュータ学院 入学" data-en="Enrolled in Kyoto Computer Gakuin">京都コンピュータ学院 入学</h3>
+                            <p data-jp="デジタルゲーム学系・ゲーム学科（4年制）にてゲーム開発の学習を開始。"
+                                data-en="Started studying game development at the Dept. of Digital Games (4-year).">
+                                デジタルゲーム学系・ゲーム学科（4年制）にてゲーム開発の学習を開始。
+                            </p>
+                            <div class="timeline-tags">
+                                <span class="badge"><i class="fa-solid fa-building-columns"></i> 学歴・学習</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- BitSummit -->
+                    <div class="timeline-item highlight-event">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content glass-card" style="border-color: var(--accent-color);">
+                            <span class="timeline-date">2025/07</span>
+                            <h3 data-jp="BitSummit the 13th Summer of Yokai"
+                                data-en="BitSummit the 13th Summer of Yokai">BitSummit the 13th Summer of Yokai</h3>
+                            <p data-jp="国内最大級のインディーゲームの祭典にて、運営ボランティアとして参加。大規模イベントを裏から支える経験を積む。（後年、BitSummit PUNCH等にも参加）"
+                                data-en="Participated as a management volunteer at Japan's largest indie game festival.">
+                                国内最大級のインディーゲームの祭典にて、運営ボランティアとして参加。<br>大規模イベントを裏から支える経験を積む。（後年、BitSummit PUNCH等にも参加）
+                            </p>
+                            <div class="timeline-tags">
+                                <span class="badge badge-accent"><i class="fa-solid fa-star"></i> 大規模イベント参加</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Osaka Expo -->
+                    <div class="timeline-item highlight-event">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content glass-card" style="border-color: var(--accent-color);">
+                            <span class="timeline-date">2025/09 ~ 10</span>
+                            <h3 data-jp="大阪万博 関西パビリオン 京都ブース" data-en="Osaka Expo Kansai Pavilion Kyoto Booth">大阪万博
+                                関西パビリオン 京都ブース</h3>
+                            <p data-jp="万博の京都ブースにてスタッフとして活動。国際的なイベントでの運営業務に携わる。"
+                                data-en="Worked as staff at the Kyoto booth at the World Expo.">
+                                万博の京都ブースにてスタッフとして活動。<br>国際的なイベントでの運営業務に携わる。
+                            </p>
+                            <div class="timeline-tags">
+                                <span class="badge badge-accent"><i class="fa-solid fa-star"></i> 大規模イベント参加</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- GGX NEXUS JAM Win -->
+                    <div class="timeline-item highlight-event">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content glass-card" style="border-color: #ffd700;">
+                            <span class="timeline-date" style="color: #ffd700;">2025/12 ~ 2026/01</span>
+                            <h3 data-jp="GGX NEXUS JAM 【優勝】" data-en="GGX NEXUS JAM [Winner]">GGX NEXUS JAM 【優勝】</h3>
+                            <p data-jp="チーム制作のプログラマとしてゲームジャムに参加し、見事優勝を果たす。チーム開発における技術力と連携力を発揮。"
+                                data-en="Participated as a programmer and won the game jam. Demonstrated technical and teamwork skills.">
+                                チーム制作のプログラマとしてゲームジャムに参加し、見事優勝を果たす。<br>チーム開発における技術力と連携力を発揮。
+                            </p>
+                            <div class="timeline-tags">
+                                <span class="badge" style="background: #ffd700; color: #000;"><i
+                                        class="fa-solid fa-trophy"></i> チーム制作 優勝</span>
+                                <span class="badge badge-secondary"><i class="fa-solid fa-people-group"></i> 継続的な制作・活動</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Other Activities -->
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content glass-card">
+                            <span class="timeline-date">2025/05 ~ 現在</span>
+                            <h3 data-jp="その他のゲームジャム・イベント活動" data-en="Other Game Jams & Events">その他のゲームジャム・イベント活動</h3>
+                            <p data-jp="Open Game Fest等のボランティアや、Minute Game、サークル合同ゲームジャム、KCG x RIT合同など、多数の開発・運営活動に継続的に取り組む。"
+                                data-en="Continuously involved in various volunteer works and game jams like Open Game Fest, Minute Game, etc.">
+                                Open Game Fest等のボランティアや、Minute Game、サークル合同ゲームジャム、KCG x RIT合同など、多数の開発・運営活動に継続的に取り組む。
+                            </p>
+                            <div class="timeline-tags">
+                                <span class="badge badge-secondary"><i class="fa-solid fa-people-group"></i>
+                                    制作・活動</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Organizations -->
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content glass-card">
+                            <span class="timeline-date">現在</span>
+                            <h3 data-jp="サークル・外部組織での活動" data-en="Activities in Circles & External Orgs">サークル・外部組織での活動
+                            </h3>
+                            <p data-jp="所属サークル「ドリー」での活動や、外部組織「京都学生eスポーツ協会」にも所属し、ゲームに関する幅広い見識とコミュニティ活動を深めている。"
+                                data-en="Active in circle 'Dolly' and external org 'Kyoto Student eSports Association', deepening game insights and community engagement.">
+                                所属サークル「ドリー」での活動や、外部組織「京都学生eスポーツ協会」にも所属し、ゲームに関する幅広い見識とコミュニティ活動を深めている。
+                            </p>
+                            <div class="timeline-tags">
+                                <span class="badge badge-secondary"><i class="fa-solid fa-users"></i> コミュニティ</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Future -->
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content glass-card">
+                            <span class="timeline-date">2029/03</span>
+                            <h3 data-jp="卒業予定" data-en="Expected Graduation">卒業予定</h3>
+                            <p data-jp="ゲームプログラマとしての就職を目指し、日々技術を研鑽中。"
+                                data-en="Continuously improving skills to secure a job as a game programmer.">
+                                ゲームプログラマとしての就職を目指し、日々技術を研鑽中。
+                            </p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
 
         <!-- Contact Section -->
         <section id="contact" class="section hidden-on-scroll">
-            <h2 class="section-title" data-jp="連絡先" data-en="Contact">連絡先</h2>
+            <h2 class="section-title" data-jp="リンク・連絡先" data-en="Contact / Links">リンク・連絡先</h2>
             <div class="contact-container glass-card">
-                <p class="contact-msg" data-jp="ご連絡はこちらから。"
-                    data-en="Feel free to reach out for work inquiries or consultations.">ご連絡はこちらから。</p>
+                <p class="contact-msg" data-jp="各種SNS・プラットフォームでも活動しています。ご連絡はお気軽にどうぞ。"
+                    data-en="Active on various platforms. Feel free to reach out.">
+                    各種SNS・プラットフォームでも活動しています。<br>ご連絡はお気軽にどうぞ。</p>
                 <div class="social-links">
                     <a href="https://github.com/Xiomi403" class="social-icon" title="GitHub"><i
                             class="fa-brands fa-github"></i></a>
@@ -291,7 +373,13 @@
                             class="fa-brands fa-x-twitter"></i></a>
                     <a href="https://www.linkedin.com/in/xiomi403" class="social-icon" title="LinkedIn"><i
                             class="fa-brands fa-linkedin-in"></i></a>
+                    <a href="https://qiita.com/xiomi" class="social-icon" title="Qiita"><i
+                            class="fa-solid fa-q"></i></a>
+                    <a href="https://note.com/xiomi" class="social-icon" title="note"><i class="fa-solid fa-n"></i></a>
                     <a href="#" id="emailBtn" class="social-icon" title="Email"><i class="fa-solid fa-envelope"></i></a>
+                </div>
+                <div class="contact-phone" style="margin-top: 1.5rem; font-size: 1.2rem; font-weight: 600;">
+                    Tel. 090-7389-4503
                 </div>
             </div>
         </section>
@@ -300,6 +388,7 @@
     <footer class="glass-footer">
         <p>&copy; 2026 塩見信太郎 All rights reserved.</p>
     </footer>
+
     <!-- Email Modal -->
     <div id="emailModal" class="modal-overlay">
         <div class="modal-content glass-card">
