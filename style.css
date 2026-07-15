@@ -3,14 +3,14 @@
     /* Fonts */
     --font-primary: 'Outfit', 'Noto Sans JP', sans-serif;
     
-    /* Dark Warm Theme Variables */
-    --bg-color: #2a211d;
-    --text-color: #f7f0e6;
-    --text-muted: #a6958b;
-    --accent-color: #d06c4c;
-    --accent-hover: #e48866;
-    --glass-bg: rgba(65, 45, 35, 0.5);
-    --glass-border: rgba(255, 215, 180, 0.1);
+    /* Grayscale & Eye-Friendly Theme Variables */
+    --bg-color: #1e1e1e;
+    --text-color: #f0f0f0;
+    --text-muted: #a0a0a0;
+    --accent-color: #5E8B7E; /* Soft sage green (eye-friendly) */
+    --accent-hover: #75a396;
+    --glass-bg: rgba(255, 255, 255, 0.05);
+    --glass-border: rgba(255, 255, 255, 0.1);
     --glass-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.4);
     
     /* Layout */
@@ -639,7 +639,7 @@ main {
 }
 
 .badge-secondary {
-    background: rgba(208, 108, 76, 0.2);
+    background: rgba(94, 139, 126, 0.2);
     color: var(--accent-color);
     border: 1px solid var(--accent-color);
 }
