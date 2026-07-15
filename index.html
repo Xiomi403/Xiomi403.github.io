@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ja" data-theme="dark">
+<html lang="ja">
 
 <head>
     <meta charset="UTF-8">
@@ -41,10 +41,6 @@
                 <!-- JP/EN 切り替え -->
                 <button id="langToggle" class="glass-btn control-btn">
                     <span class="lang-text">EN</span>
-                </button>
-                <!-- テーマ切り替え -->
-                <button id="themeToggle" class="glass-btn control-btn">
-                    <i class="fa-solid fa-sun" id="themeIcon"></i>
                 </button>
             </div>
             <!-- モバイル用ハンバーガーメニュー -->
@@ -90,7 +86,6 @@
                     </div>
                 </div>
                 <div class="hero-image-container">
-                    <div class="blob-shape"></div>
                     <img src="assets/my_icon.png" alt="Xiomi" class="hero-image" id="profileImage">
                 </div>
             </div>
@@ -106,9 +101,15 @@
                 </p>
                 <div class="about-details" style="margin-top: 2rem; text-align: left; display: inline-block;">
                     <ul style="list-style-type: none; padding: 0;">
-                        <li style="margin-bottom: 0.8rem;"><i class="fa-solid fa-building-columns" style="color: var(--accent-color); width: 24px;"></i> <span data-jp="所属: KCG D学系 4年制" data-en="Affiliation: KCG Dept. of Digital Games (4-year)">所属: KCG D学系 4年制</span></li>
-                        <li style="margin-bottom: 0.8rem;"><i class="fa-solid fa-users" style="color: var(--accent-color); width: 24px;"></i> <span data-jp="所属サークル: ドリー" data-en="Circle: Dolly">所属サークル: ドリー</span></li>
-                        <li style="margin-bottom: 0.8rem;"><i class="fa-solid fa-gamepad" style="color: var(--accent-color); width: 24px;"></i> <span data-jp="外部組織: 京都学生eスポーツ協会" data-en="Organization: Kyoto Student eSports Association">外部組織: 京都学生eスポーツ協会</span></li>
+                        <li style="margin-bottom: 0.8rem;"><i class="fa-solid fa-building-columns"
+                                style="color: var(--accent-color); width: 24px;"></i> <span data-jp="所属: KCG D学系 4年制"
+                                data-en="Affiliation: KCG Dept. of Digital Games (4-year)">所属: KCG D学系 4年制</span></li>
+                        <li style="margin-bottom: 0.8rem;"><i class="fa-solid fa-users"
+                                style="color: var(--accent-color); width: 24px;"></i> <span data-jp="所属サークル: ドリー"
+                                data-en="Circle: Dolly">所属サークル: ドリー</span></li>
+                        <li style="margin-bottom: 0.8rem;"><i class="fa-solid fa-gamepad"
+                                style="color: var(--accent-color); width: 24px;"></i> <span data-jp="外部組織: 京都学生eスポーツ協会"
+                                data-en="Organization: Kyoto Student eSports Association">外部組織: 京都学生eスポーツ協会</span></li>
                     </ul>
                 </div>
             </div>
@@ -145,35 +146,65 @@
             <h2 class="section-title" data-jp="制作した作品" data-en="My Works">制作した作品</h2>
             <div class="works-grid">
                 <!-- Work Item 1 -->
-                <div class="work-card glass-card">
+                <a href="https://linktr.ee/pistachiogekohan" class="work-card glass-card" target="_blank" rel="noopener noreferrer">
                     <div class="work-img-container">
-                        <img src="assets/work1_placeholder.png" alt="Work 1" class="work-img">
+                        <img src="https://linktr.ee/og/image/pistachiogekohan.jpg" alt="White No Way" class="work-img">
                         <div class="work-overlay">
-                            <a href="#" class="work-link-btn" target="_blank">
+                            <span class="work-link-btn">
                                 <i class="fa-solid fa-arrow-up-right-from-square"></i>
-                            </a>
+                            </span>
                         </div>
                     </div>
                     <div class="work-info">
-                        <h3 data-jp="プロジェクトタイトル 1" data-en="Project Title 1">プロジェクトタイトル 1</h3>
-                        <p data-jp="使用技術: HTML, CSS, JS" data-en="Tech Stack: HTML, CSS, JS">使用技術: HTML, CSS, JS</p>
+                        <h3 data-jp="ホワイトノウェイ" data-en="White No Way">ホワイトノウェイ</h3>
+                        <p data-jp="詳細リンクはこちら" data-en="Click to view details">詳細リンクはこちら</p>
                     </div>
-                </div>
+                </a>
                 <!-- Work Item 2 -->
-                <div class="work-card glass-card">
+                <a href="https://bitsummit-gamejam.itch.io/nigetoy" class="work-card glass-card" target="_blank" rel="noopener noreferrer">
                     <div class="work-img-container">
-                        <img src="assets/work2_placeholder.png" alt="Work 2" class="work-img">
+                        <img src="https://img.itch.zone/aW1nLzI3MjkxNzY4LmpwZw==/original/sX6ozt.jpg" alt="Nige Toy" class="work-img">
                         <div class="work-overlay">
-                            <a href="#" class="work-link-btn" target="_blank">
+                            <span class="work-link-btn">
                                 <i class="fa-solid fa-arrow-up-right-from-square"></i>
-                            </a>
+                            </span>
                         </div>
                     </div>
                     <div class="work-info">
-                        <h3 data-jp="プロジェクトタイトル 2" data-en="Project Title 2">プロジェクトタイトル 2</h3>
-                        <p data-jp="使用技術: React, Node.js" data-en="Tech Stack: React, Node.js">使用技術: React, Node.js</p>
+                        <h3 data-jp="にげトイ" data-en="Nige Toy">にげトイ</h3>
+                        <p data-jp="詳細リンクはこちら" data-en="Click to view details">詳細リンクはこちら</p>
                     </div>
-                </div>
+                </a>
+                <!-- Work Item 3 -->
+                <a href="https://unityroom.com/games/kuneyoke" class="work-card glass-card" target="_blank" rel="noopener noreferrer">
+                    <div class="work-img-container">
+                        <img src="https://os-worker.unityroom.com/unityroom_production/icon/299188/icon_20260519_220003.png?h=1779195603" alt="Kuneyoke" class="work-img">
+                        <div class="work-overlay">
+                            <span class="work-link-btn">
+                                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="work-info">
+                        <h3 data-jp="くねよけ" data-en="Kuneyoke">くねよけ</h3>
+                        <p data-jp="詳細リンクはこちら" data-en="Click to view details">詳細リンクはこちら</p>
+                    </div>
+                </a>
+                <!-- Work Item 4 -->
+                <a href="https://unityroom.com/games/bangbangball" class="work-card glass-card" target="_blank" rel="noopener noreferrer">
+                    <div class="work-img-container">
+                        <img src="https://os-worker.unityroom.com/unityroom_production/icon/302906/icon_20260601_211716.png?h=1780316236" alt="Bang!Bang!Ball!" class="work-img">
+                        <div class="work-overlay">
+                            <span class="work-link-btn">
+                                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="work-info">
+                        <h3 data-jp="Bang!Bang!Ball!" data-en="Bang!Bang!Ball!">Bang!Bang!Ball!</h3>
+                        <p data-jp="詳細リンクはこちら" data-en="Click to view details">詳細リンクはこちら</p>
+                    </div>
+                </a>
             </div>
         </section>
 
@@ -181,21 +212,37 @@
         <section id="events" class="section hidden-on-scroll">
             <h2 class="section-title" data-jp="活動実績" data-en="Activities & Experience">活動実績</h2>
             <div class="activities-grid">
-                
+
                 <!-- 参加ボランティア -->
                 <div class="activity-column glass-card">
                     <h3 data-jp="参加ボランティア" data-en="Volunteer Work">参加ボランティア</h3>
                     <ul class="activity-list">
-                        <li><span class="activity-date">2025/05</span><span class="activity-title" data-jp="OGF (KCG)" data-en="OGF (KCG)">OGF (KCG)</span></li>
-                        <li><span class="activity-date">2025/07</span><span class="activity-title" data-jp="Bit Summit (KCG)" data-en="Bit Summit (KCG)">Bit Summit (KCG)</span></li>
-                        <li><span class="activity-date">2025/09~10</span><span class="activity-title" data-jp="大阪万博 関西パビリオン 京都ブース<br>(京都学生eスポーツ協会)" data-en="Osaka Expo Kansai Pavilion Kyoto Booth<br>(Kyoto Student eSports Association)">大阪万博 関西パビリオン 京都ブース<br>(京都学生eスポーツ協会)</span></li>
-                        <li><span class="activity-date">2025/11</span><span class="activity-title" data-jp="企業説明会<br>(京都学生eスポーツ協会)" data-en="Company Information Session<br>(Kyoto Student eSports Association)">企業説明会<br>(京都学生eスポーツ協会)</span></li>
-                        <li><span class="activity-date">2025/11</span><span class="activity-title" data-jp="EGG (KCG)" data-en="EGG (KCG)">EGG (KCG)</span></li>
-                        <li><span class="activity-date">2026/02</span><span class="activity-title" data-jp="ジョブ博<br>(京都学生eスポーツ協会)" data-en="Job Fair<br>(Kyoto Student eSports Association)">ジョブ博<br>(京都学生eスポーツ協会)</span></li>
-                        <li><span class="activity-date">2026/03</span><span class="activity-title" data-jp="ゲームパビリオンjp (KCG)" data-en="Game Pavilion jp (KCG)">ゲームパビリオンjp (KCG)</span></li>
-                        <li><span class="activity-date">2026/05</span><span class="activity-title" data-jp="Bit Summit (KCG)" data-en="Bit Summit (KCG)">Bit Summit (KCG)</span></li>
-                        <li><span class="activity-date">2026/06</span><span class="activity-title" data-jp="ジョブ博<br>(京都学生eスポーツ協会)" data-en="Job Fair<br>(Kyoto Student eSports Association)">ジョブ博<br>(京都学生eスポーツ協会)</span></li>
-                        <li><span class="activity-date">2026/07</span><span class="activity-title" data-jp="Open Game Fest (KCG)" data-en="Open Game Fest (KCG)">Open Game Fest (KCG)</span></li>
+                        <li><span class="activity-date">2025/05</span><span class="activity-title"
+                                data-jp="Open Game Fest 2025" data-en="Open Game Fest 2025">Open Game Fest 2025</span>
+                        </li>
+                        <li><span class="activity-date">2025/07</span><span class="activity-title"
+                                data-jp="BitSummit the 13th Summer of Yokai"
+                                data-en="BitSummit the 13th Summer of Yokai">BitSummit the 13th Summer of Yokai</span>
+                        </li>
+                        <li><span class="activity-date">2025/09~10</span><span class="activity-title"
+                                data-jp="大阪万博 関西パビリオン 京都ブース" data-en="Osaka Expo Kansai Pavilion Kyoto Booth">大阪万博
+                                関西パビリオン 京都ブース</span></li>
+                        <li><span class="activity-date">2025/11</span><span class="activity-title" data-jp="企業説明会"
+                                data-en="Company Information Session">企業説明会</span></li>
+                        <li><span class="activity-date">2025/11</span><span class="activity-title"
+                                data-jp="ええかんじのゲームガッカイ（EGG）"
+                                data-en="EEKANJI NO GAME GAKKAI (EGG)">ええかんじのゲームガッカイ（EGG）</span></li>
+                        <li><span class="activity-date">2026/02</span><span class="activity-title" data-jp="京都ジョブ博2026"
+                                data-en="Kyoto Job Fair 2026">京都ジョブ博2026</span></li>
+                        <li><span class="activity-date">2026/03</span><span class="activity-title" data-jp="ゲームパビリオンjp"
+                                data-en="Game Pavilion jp">ゲームパビリオンjp</span></li>
+                        <li><span class="activity-date">2026/05</span><span class="activity-title"
+                                data-jp="BitSummit PUNCH" data-en="BitSummit PUNCH">BitSummit PUNCH</span></li>
+                        <li><span class="activity-date">2026/06</span><span class="activity-title"
+                                data-jp="夏の京都ジョブ博2026" data-en="Summer Kyoto Job Fair 2026">夏の京都ジョブ博2026</span></li>
+                        <li><span class="activity-date">2026/07</span><span class="activity-title"
+                                data-jp="Open Game Fest 2026" data-en="Open Game Fest 2026">Open Game Fest 2026</span>
+                        </li>
                     </ul>
                 </div>
 
@@ -203,16 +250,29 @@
                 <div class="activity-column glass-card">
                     <h3 data-jp="チーム制作" data-en="Team Projects">チーム制作</h3>
                     <ul class="activity-list">
-                        <li><span class="activity-date">2025/08</span><span class="activity-title" data-jp="Minute Game" data-en="Minute Game">Minute Game</span></li>
-                        <li><span class="activity-date">2025/09</span><span class="activity-title" data-jp="学内Jam" data-en="School Jam">学内Jam</span></li>
-                        <li><span class="activity-date">2025/11</span><span class="activity-title" data-jp="学内 11月祭" data-en="School November Festival">学内 11月祭</span></li>
-                        <li><span class="activity-date">2025/12~2026/01</span><span class="activity-title" data-jp="GGX" data-en="GGX">GGX</span></li>
-                        <li><span class="activity-date">2026/02</span><span class="activity-title" data-jp="学内制作" data-en="School Project">学内制作</span></li>
-                        <li><span class="activity-date">2026/02</span><span class="activity-title" data-jp="Bit Summit Game Jam" data-en="Bit Summit Game Jam">Bit Summit Game Jam</span></li>
-                        <li><span class="activity-date">2026/04</span><span class="activity-title" data-jp="KCG x RIT合同ゲームジャム" data-en="KCG x RIT Joint Game Jam">KCG x RIT合同ゲームジャム</span></li>
-                        <li><span class="activity-date">2026/05</span><span class="activity-title" data-jp="ドリー1週間ゲームジャム" data-en="Dolly 1-Week Game Jam">ドリー1週間ゲームジャム</span></li>
-                        <li><span class="activity-date">2026/06</span><span class="activity-title" data-jp="サークル合同1週間ゲームジャム" data-en="Joint Circle 1-Week Game Jam">サークル合同1週間ゲームジャム</span></li>
-                        <li><span class="activity-date">2026</span><span class="activity-title" data-jp="(タイトル未定)" data-en="(TBD)">(タイトル未定)</span></li>
+                        <li><span class="activity-date">2025/08</span><span class="activity-title" data-jp="Minute Game"
+                                data-en="Minute Game">Minute Game</span></li>
+                        <li><span class="activity-date">2025/09</span><span class="activity-title"
+                                data-jp="サークル合同ゲームジャム" data-en="Joint Circle Game Jam">サークル合同ゲームジャム</span></li>
+                        <li><span class="activity-date">2025/11</span><span class="activity-title"
+                                data-jp="KCG 11月祭展示ゲーム制作" data-en="KCG November Festival Game Project">KCG
+                                11月祭展示ゲーム制作</span></li>
+                        <li><span class="activity-date">2025/12~2026/01</span><span class="activity-title"
+                                data-jp="GGX NEXUS JAM" data-en="GGX NEXUS JAM">GGX NEXUS JAM</span></li>
+                        <li><span class="activity-date">2026/02</span><span class="activity-title"
+                                data-jp="Bit Summit Game Jam" data-en="Bit Summit Game Jam">Bit Summit Game Jam</span>
+                        </li>
+                        <li><span class="activity-date">2026/04</span><span class="activity-title"
+                                data-jp="KCG x RIT合同ゲームジャム1回目" data-en="KCG x RIT Joint Game Jam 1st">KCG x
+                                RIT合同ゲームジャム1回目</span></li>
+                        <li><span class="activity-date">2026/05</span><span class="activity-title"
+                                data-jp="ドリー1週間ゲームジャム" data-en="Dolly 1-Week Game Jam">ドリー1週間ゲームジャム</span></li>
+                        <li><span class="activity-date">2026/05</span><span class="activity-title"
+                                data-jp="KCG x RIT合同ゲームジャム2回目" data-en="KCG x RIT Joint Game Jam 2nd">KCG x
+                                RIT合同ゲームジャム2回目</span></li>
+                        <li><span class="activity-date">2026/06</span><span class="activity-title"
+                                data-jp="サークル合同1週間ゲームジャム" data-en="Joint Circle 1-Week Game Jam">サークル合同1週間ゲームジャム</span>
+                        </li>
                     </ul>
                 </div>
             </div>

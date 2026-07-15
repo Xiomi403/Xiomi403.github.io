@@ -8,8 +8,6 @@ document.addEventListener('DOMContentLoaded', () => {
     // --- 要素の取得 ---
     const langToggleBtn = document.getElementById('langToggle');
     const langText = langToggleBtn.querySelector('.lang-text');
-    const themeToggleBtn = document.getElementById('themeToggle');
-    const themeIcon = document.getElementById('themeIcon');
     const scrollTopBtn = document.getElementById('scrollTopBtn');
     const mobileMenuBtn = document.getElementById('mobileMenuBtn');
     const mobileNav = document.getElementById('mobileNav');
@@ -17,7 +15,6 @@ document.addEventListener('DOMContentLoaded', () => {
     
     // --- 状態管理 ---
     let isEnglish = false;
-    let isDarkTheme = true;
 
     // --- 言語切り替え機能 ---
     /**
@@ -46,28 +43,6 @@ document.addEventListener('DOMContentLoaded', () => {
     };
 
     langToggleBtn.addEventListener('click', toggleLanguage);
-
-
-    // --- テーマ（ダーク/ライト）切り替え機能 ---
-    /**
-     * @summary bodyのテーマ属性を切り替え、アイコンを変更する
-     */
-    const toggleTheme = () => {
-        isDarkTheme = !isDarkTheme;
-        const root = document.documentElement;
-        
-        if (isDarkTheme) {
-            root.setAttribute('data-theme', 'dark');
-            themeIcon.classList.remove('fa-moon');
-            themeIcon.classList.add('fa-sun');
-        } else {
-            root.setAttribute('data-theme', 'light');
-            themeIcon.classList.remove('fa-sun');
-            themeIcon.classList.add('fa-moon');
-        }
-    };
-
-    themeToggleBtn.addEventListener('click', toggleTheme);
 
 
     // --- モバイルナビゲーション ---
