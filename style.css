@@ -335,19 +335,25 @@ main {
 }
 
 .hero-image-container {
-    flex: 1;
+    flex: 0 0 auto;
     display: flex;
     justify-content: center;
     position: relative;
 }
 
 .hero-image {
-    width: 350px;
-    height: 350px;
+    width: 220px;
+    height: 220px;
     object-fit: cover;
-    border-radius: 50%;
-    border: 4px solid var(--glass-bg);
+    border-radius: 12px;
+    border: 6px solid var(--glass-bg);
     box-shadow: var(--glass-shadow);
+    transform: rotate(-4deg);
+    transition: transform 0.3s ease;
+}
+
+.hero-image:hover {
+    transform: rotate(0deg) scale(1.05);
 }
 
 /* About Section */
@@ -811,8 +817,8 @@ main {
     }
     
     .hero-image {
-        width: 250px;
-        height: 250px;
+        width: 180px;
+        height: 180px;
     }
     
     .hero-title {

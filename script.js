@@ -16,6 +16,14 @@ document.addEventListener('DOMContentLoaded', () => {
     // --- 状態管理 ---
     let isEnglish = false;
 
+    // --- プロフィール画像のランダム化 ---
+    const profileImage = document.getElementById('profileImage');
+    if (profileImage) {
+        const images = ['assets/my.jpg', 'assets/my2.png'];
+        const randomImage = images[Math.floor(Math.random() * images.length)];
+        profileImage.src = randomImage;
+    }
+
     // --- 言語切り替え機能 ---
     /**
      * @summary ページ内のテキストをJP/ENで切り替える
@@ -190,6 +198,28 @@ document.addEventListener('DOMContentLoaded', () => {
                 const targetId = btn.getAttribute('data-target');
                 document.getElementById(targetId).classList.add('active');
             });
+        });
+    }
+
+    // --- Skills Modal ---
+    const openSkillsBtn = document.getElementById('openSkillsModalBtn');
+    const skillsModal = document.getElementById('skillsModal');
+    const closeSkillsBtn = document.getElementById('closeSkillsModalBtn');
+
+    if (openSkillsBtn && skillsModal) {
+        openSkillsBtn.addEventListener('click', (e) => {
+            e.preventDefault();
+            skillsModal.classList.add('active');
+        });
+
+        closeSkillsBtn.addEventListener('click', () => {
+            skillsModal.classList.remove('active');
+        });
+
+        skillsModal.addEventListener('click', (e) => {
+            if (e.target === skillsModal) {
+                skillsModal.classList.remove('active');
+            }
         });
     }
 });
